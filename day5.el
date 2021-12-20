@@ -84,7 +84,6 @@
   (message "P1: %s" (count-intersections table))
   (update-table input table 'part2)
   (message "P2: %s" (count-intersections table)))
-
-;;; Part II
+
 (provide 'day5)
 ;;; day5.el ends here
