@@ -1,1 +1,0 @@
-In it's history since 80's, Emacs Lisp has evolved long way form being just a scripting language for a text editor. Today, it is a Lisp-2 languane sharing a lot in common with Common Lisp, and being suitable for many tasks 
