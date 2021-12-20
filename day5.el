@@ -23,8 +23,6 @@
 ;; 
 
 ;;; Code:
-
-;;; Part I
 (defun gen-straights (x1 y1 x2 y2)
   (cond ((= x1 x2)
          (mapcar (lambda (c) (cons x1 c))
