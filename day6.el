@@ -83,13 +83,15 @@
         (when fish
           (push (cons 8 (cdr fish)) input)
           (if (assoc '6 input)
-              (cl-incf (cdr fish) (cdr (assoc '6 input)))
+              (cl-incf (cdr (assoc '6 input)) (cdr fish))
             (push (cons 6 (cdr fish)) input))
           (setq input (cl-sort input #'< :key #'car)))))
     (mapc (lambda (x) (cl-incf count (cdr x))) input)
     count))
 
-(simulate-fishes 256)
+(progn
+  (message "P1: %s" (simulate-fishes 80))
+  (message "P2: %s" (simulate-fishes 256)))
   
 (provide 'day6)
 ;;; day6.el ends here
